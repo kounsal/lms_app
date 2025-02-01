@@ -6,7 +6,7 @@ import 'package:lms_app/views/MyCoursesScreen/my_courses_screen.dart';
 
 class BottomBarController extends GetxController {
   List<Widget> screens = [
-    const HomeScreen(),
+ HomeScreen(),
     const BookmarkScreen(),
     const MyCoursesScreen(),
   ];

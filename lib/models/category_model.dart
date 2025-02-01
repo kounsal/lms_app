@@ -3,14 +3,15 @@ import '../utils/assets_manager.dart';
 class CategoryModel {
   String title;
   String icon;
+  String routeName;
 
-  CategoryModel ({required this.title, required this.icon});
+  CategoryModel ({required this.title, required this.icon , required this.routeName});
 }
 
 List<CategoryModel> getCategories = [
-  CategoryModel(title: 'Website', icon: ImageManager.web),
-  CategoryModel(title: 'Graphics', icon: ImageManager.graphic),
-  CategoryModel(title: 'Editing', icon: ImageManager.video),
-  CategoryModel(title: 'Development', icon: ImageManager.personalDevelopment),
-  CategoryModel(title: 'Math', icon: ImageManager.math),
+  CategoryModel(title: 'All Courses', icon: ImageManager.video , routeName: '/all-courses'),
+  CategoryModel(title: 'Free Videos', icon: ImageManager.graphic , routeName: '/free-videos'),
+  CategoryModel(title: 'Test Series', icon: ImageManager.video , routeName: '/test-series'),
+  CategoryModel(title: 'Quiz', icon: ImageManager.personalDevelopment , routeName: '/quiz'),
+  CategoryModel(title: 'Books', icon: ImageManager.math, routeName: '/books'),
 ];

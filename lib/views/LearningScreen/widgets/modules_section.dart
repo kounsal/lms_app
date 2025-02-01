@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/models/course_model.dart';
+import 'package:lms_app/models/single_course_model.dart';
 import 'package:lms_app/routes/route_names.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/themes.dart';
 
 class ModulesSection extends StatelessWidget {
-  final CourseModel course;
+  // final SingleCourseModel course;
+  final CourseModel course = getFeaturedCourse[0];
 
-  const ModulesSection({super.key, required this.course});
+  ModulesSection({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +86,7 @@ class ModulesSection extends StatelessWidget {
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: TextFormat.extraSmall(
-                                      text: '${topic.totalLesson} Lessons',
+                                      text: '${topic.lesson!.length} Lessons',
                                       textColor: Colors.deepPurple,
                                     ),
                                   ),
@@ -102,17 +106,20 @@ class ModulesSection extends StatelessWidget {
                           itemBuilder: (ctx, indexLess) {
                             final lesson = topic.lesson![indexLess];
                             return ListTile(
-                              onTap: () {
-                                controller.currentLessonIndex.value = indexLess;
-                                Get.toNamed(
-                                  RouteNames.lesson,
-                                  arguments: {
-                                    'index': indexLess,
-                                    'topic_index': index,
-                                    'course': course,
-                                  },
-                                );
-                              },
+                              onTap: course.isPurchased!
+                                  ? () {
+                                      controller.currentLessonIndex.value =
+                                          indexLess;
+                                      Get.toNamed(
+                                        RouteNames.lesson,
+                                        arguments: {
+                                          'index': indexLess,
+                                          'topic_index': index,
+                                          'course': course,
+                                        },
+                                      );
+                                    }
+                                  : null,
                               contentPadding: EdgeInsets.zero,
                               leading: CircleAvatar(
                                 backgroundColor:
@@ -123,8 +130,13 @@ class ModulesSection extends StatelessWidget {
                                 ),
                               ),
                               title: Text(lesson.title),
-                              trailing: TextFormat.extraSmall(
-                                text: lesson.duration,
+                              trailing:course.isPurchased!
+                                  ? 
+                               TextFormat.extraSmall(
+                                text: lesson.duration.toString(),
+                              ) : Icon(
+                                Icons.lock,
+                                color: AppColors.primary,
                               ),
                             );
                           },

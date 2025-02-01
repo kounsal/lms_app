@@ -18,6 +18,7 @@ class ChewieVideoPlayer extends StatefulWidget {
   final Topics? topic;
   final CourseModel? course;
   final Duration? startAt;
+    final String? thumbnail;
 
   const ChewieVideoPlayer({
     super.key,
@@ -30,7 +31,10 @@ class ChewieVideoPlayer extends StatefulWidget {
     this.topic,
     this.course,
     this.startAt,
+    this.thumbnail,
   });
+
+ 
 
   @override
   _ChewieVideoPlayerState createState() => _ChewieVideoPlayerState();

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lms_app/controllers/home_controller.dart';
+import 'package:lms_app/routes/route_names.dart';
 
 class CategorySection extends StatelessWidget {
   const CategorySection({super.key});
@@ -29,36 +30,41 @@ class CategorySection extends StatelessWidget {
             itemCount: controller.categories.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return Column(
-                children: [
-                  Container(
-                    width: 70,
-                    margin: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        color: Colors.black.withOpacity(.1),
+              return GestureDetector(
+                onTap: () {
+                  Get.toNamed(controller.categories[index].routeName);
+                },
+                child: Column(
+                  children: [
+                    Container(
+                      width: 70,
+                      margin: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Colors.black.withOpacity(.1),
+                        ),
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(controller.categories[index].icon),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 65,
-                    child: Text(
-                      controller.categories[index].title,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 10,
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(controller.categories[index].icon),
+                        ),
                       ),
                     ),
-                  )
-                ],
+                    SizedBox(
+                      width: 65,
+                      child: Text(
+                        controller.categories[index].title,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 10,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               );
             },
           ),

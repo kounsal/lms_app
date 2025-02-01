@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/controllers/login_controller.dart';
 import 'package:lms_app/global_widgets/custom_button.dart';
 import 'package:lms_app/helpers/form_helpers.dart';
@@ -13,7 +14,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(LoginController());
+    final authController = Get.find<AuthController>();
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -43,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       // Login Form
                       Form(
-                        key: controller.globalKey,
+                        // key: controller.globalKey,
                         child: Column(
                           children: [
                             CustomTextField(
@@ -52,12 +53,9 @@ class LoginScreen extends StatelessWidget {
                               prefixIcon: Icons.alternate_email,
                               isRequired: true,
                               errorText:
-                              controller.emailError.value.isNotEmpty
-                                  ? 'Invalid Email Address'
-                                  : null,
-                              onChanged: (email) {
-                                controller.user.email = email;
-                                controller.validateEmail(email);
+                              authController.validateEmail(authController.email.value),
+                              onChanged: (value) {
+                               authController.email.value = value;
                               },
                             ),
                             const SizedBox(
@@ -70,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                               isRequired: true,
                               isSecured: true,
                               isLogin: true,
-                              onChanged: (p0) => controller.user.password = p0,
+                              onChanged:  (value) => authController.password.value = value,
                             ),
                           ],
                         ),
@@ -95,12 +93,12 @@ class LoginScreen extends StatelessWidget {
 
                       // Login Button
                       CustomButton(
-                        isLoading: controller.isLoading.value,
+                        isLoading: authController.isLoading.value,
                         buttonTitle: 'Log In',
                         onTap: () {
                           // Check the form is valid or not
-                          if (controller.globalKey.currentState!.validate()) {
-                            controller.login();
+                          if (authController.validateEmail(authController.email.value) == null) {
+                           authController.login();
                           }
 
                           // Otherwise it will trow an error message

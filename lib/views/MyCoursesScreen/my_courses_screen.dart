@@ -5,12 +5,24 @@ import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/global_widgets/custom_app_bar.dart';
 import 'widgets/my_course_grid.dart';
 
-class MyCoursesScreen extends StatelessWidget {
+class MyCoursesScreen extends StatefulWidget {
   const MyCoursesScreen({super.key});
 
   @override
+  State<MyCoursesScreen> createState() => _MyCoursesScreenState();
+}
+
+class _MyCoursesScreenState extends State<MyCoursesScreen> {
+   final controller = Get.put(CourseController());
+  @override
+  void initState() {
+    super.initState();
+    controller.getMyCourses();
+  }
+  @override
   Widget build(BuildContext context) {
-    final controller = Get.put(CourseController());
+   
+    
     return Scaffold(
       appBar: customAppBar(),
       body: SingleChildScrollView(
@@ -22,7 +34,8 @@ class MyCoursesScreen extends StatelessWidget {
           itemCount: 2,
           itemBuilder: (ctx, index) {
             final course = controller.featuredCourses[index];
-            return MyCourseGrid(
+            return 
+            MyCourseGrid(
               course: course,
             );
           },

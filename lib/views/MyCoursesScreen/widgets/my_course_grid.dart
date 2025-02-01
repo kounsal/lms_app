@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/models/course_model.dart';
+import 'package:lms_app/models/coursee_model_new.dart';
 import 'package:lms_app/routes/route_names.dart';
 import 'package:lms_app/utils/assets_manager.dart';
 import 'package:lms_app/utils/colors.dart';
@@ -9,7 +10,7 @@ import 'package:lms_app/utils/themes.dart';
 import '../../../helpers/star_display_helper.dart';
 
 class MyCourseGrid extends StatelessWidget {
-  final CourseModel course;
+  final Course course;
 
   const MyCourseGrid({
     Key? key,
@@ -18,8 +19,9 @@ class MyCourseGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    CourseModel cou = getFeaturedCourse[0];
     return InkWell(
-      onTap: () => Get.toNamed(RouteNames.courseLearn, arguments: course),
+      onTap: () => Get.toNamed(RouteNames.courseLearn, arguments: cou),
       child: SizedBox(
         width: double.infinity,
         child: Card(
@@ -42,6 +44,13 @@ class MyCourseGrid extends StatelessWidget {
                       height: 120,
                       width: double.infinity,
                       fit: BoxFit.cover,
+                      imageErrorBuilder: (context, error, stackTrace) =>
+                          Image.asset(
+                        ImageManager.logo,
+                        height: 120,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ],
@@ -70,7 +79,7 @@ class MyCourseGrid extends StatelessWidget {
                           SizedBox(
                             width: 80,
                             child: StarDisplayWidget(
-                              value: course.rating!,
+                              value: course.rating.toInt(),
                               filledStar: Icon(
                                 Icons.star,
                                 color: AppColors.primary,
@@ -101,7 +110,7 @@ class MyCourseGrid extends StatelessWidget {
                     ),
                     GetBuilder<CourseController>(
                       builder: (controller) {
-                        controller.calculateOverallCourseProgress(course);
+                        // controller.calculateOverallCourseProgress(course);
                         return Column(
                           children: [
                             SizedBox(

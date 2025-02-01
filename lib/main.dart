@@ -9,6 +9,7 @@ import 'package:lms_app/utils/config.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   AllBindings().dependencies();
+  // Get.put(AuthController());
   runApp(const MyApp());
 }
 
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       getPages: Routes.destination,
       initialRoute: RouteNames.initial,
+      initialBinding: AllBindings(),
     );
   }
 }

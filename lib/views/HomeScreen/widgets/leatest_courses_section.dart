@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lms_app/controllers/home_controller.dart';
+import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/utils/themes.dart';
 import '../../../utils/colors.dart';
 
@@ -11,7 +11,7 @@ class LatestCoursesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(HomeController());
+    final controller = Get.find<CourseController>();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -40,103 +40,138 @@ class LatestCoursesSection extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        AlignedGridView.count(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          crossAxisCount: 2,
-          itemCount: controller.featuredCourses.length,
-          itemBuilder: (ctx, index) {
-            final data = controller.featuredCourses[index];
-            return SizedBox(
-              width: double.infinity,
-              child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                elevation: 0.1,
-                child: Column(
-                  children: <Widget>[
-                    Stack(
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(15),
-                            topRight: Radius.circular(15),
-                          ),
-                          child: FadeInImage.assetNetwork(
-                            placeholder: 'assets/images/logo.webp',
-                            image: data.thumbnail,
-                            height: 120,
-                            width: double.infinity,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          bottom: 5, right: 8, left: 8, top: 5),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+        Obx(() {
+          return AlignedGridView.count(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            crossAxisCount: 2,
+            itemCount: controller.latestCourse.length,
+            itemBuilder: (ctx, index) {
+              final data = controller.latestCourse[index];
+              return SizedBox(
+                width: double.infinity,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  elevation: 0.1,
+                  child: Column(
+                    children: <Widget>[
+                      Stack(
                         children: <Widget>[
-                          SizedBox(
-                            height: 42,
-                            child: TextFormat.small(
-                              text: data.title,
-                              textAlign: TextAlign.start,
+                          ClipRRect(
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(15),
+                              topRight: Radius.circular(15),
+                            ),
+                            child: Image.network(
+                              height: 120,
+                              width: double.infinity,
+                              data.thumbnail ?? "",
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) {
+                                return SizedBox(
+                                  height: 120,
+                                  child: Center(
+                                    child: Icon(
+                                      
+                                      Icons.broken_image_outlined,
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                );
+                              },
                             ),
                           ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          data.salePrice != null ? Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              TextFormat.small(
-                                text: '৳${data.salePrice}',
-                                textColor: AppColors.primary,
-                                fontWeight: FontWeight.w800,
-                              ),
-                              TextFormat.small(
-                                text: '৳${data.regularPrice}',
-                                decoration: TextDecoration.lineThrough
-                              ),
-                            ],
-                          ) : TextFormat.small(
-                            text: '৳${data.regularPrice}',
-                            textColor: AppColors.primary,
-                            fontWeight: FontWeight.w800,
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: AppColors.primary, width: 1.5),
-                                borderRadius: BorderRadius.circular(15)),
-                            child: const Center(
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 15,
-                                  vertical: 10,
-                                ),
-                                child: Text("Buy Now"),
-                              ),
-                            ),
-                          )
                         ],
                       ),
-                    ),
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            bottom: 5, right: 8, left: 8, top: 5),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            SizedBox(
+                              height: 42,
+                              child: TextFormat.small(
+                                text: data.title ?? "",
+                                textAlign: TextAlign.start,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            data.isFree ?? false
+                                ? TextFormat.small(
+                                    text: 'Free',
+                                    textColor: AppColors.primary,
+                                    fontWeight: FontWeight.w800,
+                                  )
+                                :
+                            data.priceWithDiscount != null
+                                ? Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      TextFormat.small(
+                                        text: 'Rs.${data.priceWithDiscount}',
+                                        textColor: AppColors.primary,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                      TextFormat.small(
+                                          text: 'Rs.${data.price}',
+                                          decoration:
+                                              TextDecoration.lineThrough),
+                                    ],
+                                  )
+                                : TextFormat.small(
+                                    text: 'Rs.${data.price}',
+                                    textColor: AppColors.primary,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: AppColors.primary, width: 1.5),
+                                  borderRadius: BorderRadius.circular(15)),
+                              child:  Center(
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 15,
+                                    vertical: 10,
+                                  ),
+                                  child: data.isFree ?? false
+                                      ? TextFormat.small(
+                                          text: 'Enroll',
+                                          textColor: AppColors.primary,
+                                          fontWeight: FontWeight.w800,
+                                        )
+                                      : TextFormat.small(
+                                          text: 'Buy Now',
+                                          textColor: AppColors.primary,
+                                          fontWeight: FontWeight.w800,
+                                        ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            );
-          },
-          mainAxisSpacing: 5.0,
-          crossAxisSpacing: 5.0,
-        ),
+              );
+            },
+            mainAxisSpacing: 5.0,
+            crossAxisSpacing: 5.0,
+          );
+        }),
+     
       ],
     );
   }

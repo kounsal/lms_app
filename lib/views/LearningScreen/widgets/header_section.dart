@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lms_app/global_widgets/new_video_player.dart';
+import 'package:lms_app/global_widgets/video_player.dart';
 import 'package:lms_app/models/course_model.dart';
+import 'package:lms_app/models/single_course_model.dart';
+import 'package:video_player/video_player.dart';
 import '../../../helpers/star_display_helper.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/themes.dart';
 
 class HeaderSection extends StatelessWidget {
-  final CourseModel arg;
+  final SingleCourseModel arg;
 
   const HeaderSection({super.key, required this.arg});
 
@@ -43,7 +47,7 @@ class HeaderSection extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextFormat.extraSmall(
-                        text: 'By ${arg.author}', opacity: .5),
+                        text: 'By ${arg.teacher}', opacity: .5),
                     Row(
                       children: [
                         SizedBox(
@@ -83,11 +87,26 @@ class HeaderSection extends StatelessWidget {
                   height: size.height * .2,
                   width: size.width,
                   decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(20),
-                      image:
-                          DecorationImage(image: NetworkImage(arg.thumbnail))),
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: NewVideoPlayer(
+                    videoUrl: arg.preview,
+                    thumbnail: arg.thumbnail, // Thumbnail image URL
+                    title: arg.title,
+                    autoPlay: true,
+                    looping: true,
+                  ),
                 ),
+                // Container(
+                //   height: size.height * .2,
+                //   width: size.width,
+                //   decoration: BoxDecoration(
+                //       color: Colors.black,
+                //       borderRadius: BorderRadius.circular(20),
+                //       image:
+                //           DecorationImage(image: NetworkImage(arg.thumbnail))),
+                // ),
               ],
             ),
           ),

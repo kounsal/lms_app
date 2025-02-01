@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/controllers/register_controller.dart';
 import 'package:lms_app/global_widgets/custom_button.dart';
 import 'package:lms_app/helpers/form_helpers.dart';
@@ -12,7 +13,8 @@ class RegisterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(RegisterController());
+    final controller = Get.find<AuthController>();
+    // final controller = Get.put(RegisterController());
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -41,7 +43,7 @@ class RegisterScreen extends StatelessWidget {
                         children: [
                           // Login Form
                           Form(
-                            key: controller.globalKey,
+                            // key: controller.globalKey,
                             child: Column(
                               children: [
                                 // CustomTextField(
@@ -59,7 +61,8 @@ class RegisterScreen extends StatelessWidget {
                                   hintText: 'Enter your username',
                                   prefixIcon: Icons.alternate_email,
                                   isRequired: true,
-                                  onChanged: (p0) => controller.user.fullname = p0,
+                                  onChanged: (p0) =>
+                                      controller.user.value?.fullname = p0,
                                 ),
                                 const SizedBox(
                                   height: 15,
@@ -70,7 +73,7 @@ class RegisterScreen extends StatelessWidget {
                                   prefixIcon: Icons.email_rounded,
                                   isRequired: true,
                                   onChanged: (username) {
-                                    controller.user.email = username;
+                                    controller.user.value?.email = username;
                                   },
                                 ),
                                 const SizedBox(
@@ -82,7 +85,8 @@ class RegisterScreen extends StatelessWidget {
                                   prefixIcon: Icons.password,
                                   isRequired: true,
                                   isSecured: true,
-                                  onChanged: (p0) => controller.user.password = p0,
+                                  onChanged: (p0) =>
+                                      controller.user.value?.password = p0,
                                 ),
                                 const SizedBox(
                                   height: 15,
@@ -94,7 +98,7 @@ class RegisterScreen extends StatelessWidget {
                                   isRequired: true,
                                   isSecured: true,
                                   errorText: controller
-                                          .confirmPasswordError.value.isNotEmpty
+                                          .confirmPassword.value.isNotEmpty
                                       ? 'Password mismatched'
                                       : null,
                                   onChanged: (p0) {
@@ -113,15 +117,26 @@ class RegisterScreen extends StatelessWidget {
                             isLoading: controller.isLoading.value,
                             buttonTitle: 'Sign Up',
                             onTap: () {
-                              // Check the form is valid or not
-                              if (controller.globalKey.currentState!
-                                  .validate()) {
-                                if (controller.emailError.value.isEmpty &&
-                                    controller
-                                        .confirmPasswordError.value.isEmpty) {
-                                  controller.register();
-                                }
+                              if (controller.validateConfirmPassword(
+                                          controller.password.value) ==
+                                      null &&
+                                  controller.validateEmail(
+                                          controller.email.value) ==
+                                      null &&
+                                  controller.validatePassword(
+                                          controller.password.value) ==
+                                      null) {
+                                controller.register();
                               }
+                              // Check the form is valid or not
+                              // if (controller.globalKey.currentState!
+                              //     .validate()) {
+                              //   if (controller.emailError.value.isEmpty &&
+                              //       controller
+                              //           .confirmPasswordError.value.isEmpty) {
+                              //     controller.register();
+                              //   }
+                              // }
                             },
                           ),
                           const SizedBox(

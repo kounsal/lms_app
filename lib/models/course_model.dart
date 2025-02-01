@@ -11,6 +11,7 @@ class CourseModel {
   double? completedValue;
   List<Topics>? topics;
   String promoVide;
+  bool? isPurchased;
 
   CourseModel({
     required this.title,
@@ -23,6 +24,7 @@ class CourseModel {
     this.completedValue,
     this.topics,
     required this.promoVide,
+    this.isPurchased,
   });
 }
 
@@ -56,6 +58,7 @@ class Lessons {
 
 List<CourseModel> getFeaturedCourse = [
   CourseModel(
+    isPurchased : false,
     promoVide: 'assets/videos/flutter.mp4',
     title: 'Mastering Entrepreneurship',
     thumbnail:
