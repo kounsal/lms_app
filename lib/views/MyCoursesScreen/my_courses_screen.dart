@@ -13,36 +13,42 @@ class MyCoursesScreen extends StatefulWidget {
 }
 
 class _MyCoursesScreenState extends State<MyCoursesScreen> {
-   final controller = Get.put(CourseController());
+  final controller = Get.put(CourseController());
   @override
   void initState() {
     super.initState();
     controller.getMyCourses();
   }
+
   @override
   Widget build(BuildContext context) {
-   
-    
     return Scaffold(
       appBar: customAppBar(),
-      body: SingleChildScrollView(
-        child: AlignedGridView.count(
-          padding: const EdgeInsets.all(10.0),
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          crossAxisCount: 2,
-          itemCount: 2,
-          itemBuilder: (ctx, index) {
-            final course = controller.featuredCourses[index];
-            return 
-            MyCourseGrid(
-              course: course,
-            );
-          },
-          mainAxisSpacing: 5.0,
-          crossAxisSpacing: 5.0,
-        ),
-      ),
+      body: Obx(() {
+        return 
+        controller.myCourses.isEmpty
+            ? const Center(
+                child: Text('No courses Purchased yet'),
+              )
+            :
+        SingleChildScrollView(
+          child: AlignedGridView.count(
+            padding: const EdgeInsets.all(10.0),
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            crossAxisCount: 2,
+            itemCount: controller.myCourses.length,
+            itemBuilder: (ctx, index) {
+              final course = controller.myCourses[index];
+              return MyCourseGrid(
+                course: course,
+              );
+            },
+            mainAxisSpacing: 5.0,
+            crossAxisSpacing: 5.0,
+          ),
+        );
+      }),
     );
   }
 }

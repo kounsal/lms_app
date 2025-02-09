@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/controllers/course_controller.dart';
+import 'package:lms_app/routes/route_names.dart';
 import 'package:lms_app/utils/themes.dart';
 import '../../../utils/colors.dart';
 
@@ -11,6 +13,7 @@ class LatestCoursesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authcontroller = Get.find<AuthController>();
     final controller = Get.find<CourseController>();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,10 +32,15 @@ class LatestCoursesSection extends StatelessWidget {
                 color: Colors.black.withOpacity(.6),
               ),
             ),
-            Text(
-              'View All',
-              style: GoogleFonts.poppins(
-                color: AppColors.primary,
+            GestureDetector(
+               onTap: (){
+                Get.toNamed(RouteNames.allCourses);
+              },
+              child: Text(
+                'View All',
+                style: GoogleFonts.poppins(
+                  color: AppColors.primary,
+                ),
               ),
             ),
           ],
@@ -73,11 +81,10 @@ class LatestCoursesSection extends StatelessWidget {
                                 return SizedBox(
                                   height: 120,
                                   child: Center(
-                                    child: Icon(
-                                      
-                                      Icons.broken_image_outlined,
-                                      color: Colors.red,
-                                    ),
+                                    child: Image.asset(
+                                        'assets/images/logo.webp',
+                                        fit: BoxFit.contain,
+                                      ),
                                   ),
                                 );
                               },
@@ -85,83 +92,107 @@ class LatestCoursesSection extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            bottom: 5, right: 8, left: 8, top: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(
-                              height: 42,
-                              child: TextFormat.small(
-                                text: data.title ?? "",
-                                textAlign: TextAlign.start,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 5,
-                            ),
-                            data.isFree ?? false
-                                ? TextFormat.small(
-                                    text: 'Free',
-                                    textColor: AppColors.primary,
-                                    fontWeight: FontWeight.w800,
-                                  )
-                                :
-                            data.priceWithDiscount != null
-                                ? Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      TextFormat.small(
-                                        text: 'Rs.${data.priceWithDiscount}',
+                    
+                        GestureDetector(
+                          onTap: () async{
+                             await controller
+                                          .getCourseDetails(data.id);
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                bottom: 5, right: 8, left: 8, top: 5),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                SizedBox(
+                                  height: 42,
+                                  child: TextFormat.small(
+                                    text: data.title ?? "",
+                                    textAlign: TextAlign.start,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Obx(
+                                  ()=> authcontroller.user.value!.purchasedCourses!
+                                        .any((course) => course.id == data.id)
+                                    ? TextFormat.small(
+                                        text: 'Purchased',
                                         textColor: AppColors.primary,
                                         fontWeight: FontWeight.w800,
-                                      ),
-                                      TextFormat.small(
-                                          text: 'Rs.${data.price}',
-                                          decoration:
-                                              TextDecoration.lineThrough),
-                                    ],
-                                  )
-                                : TextFormat.small(
-                                    text: 'Rs.${data.price}',
-                                    textColor: AppColors.primary,
-                                    fontWeight: FontWeight.w800,
-                                  ),
-                            const SizedBox(
-                              height: 5,
-                            ),
-                            
-                            Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: AppColors.primary, width: 1.5),
-                                  borderRadius: BorderRadius.circular(15)),
-                              child:  Center(
-                                child: Padding(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 15,
-                                    vertical: 10,
-                                  ),
-                                  child: data.isFree ?? false
-                                      ? TextFormat.small(
-                                          text: 'Enroll',
-                                          textColor: AppColors.primary,
-                                          fontWeight: FontWeight.w800,
-                                        )
-                                      : TextFormat.small(
-                                          text: 'Buy Now',
-                                          textColor: AppColors.primary,
-                                          fontWeight: FontWeight.w800,
-                                        ),
+                                      )
+                                    : data.isFree ?? false
+                                        ? TextFormat.small(
+                                            text: 'Free',
+                                            textColor: AppColors.primary,
+                                            fontWeight: FontWeight.w800,
+                                          )
+                                        
+                                        // :
+                                        // data.priceWithDiscount != null
+                                        //     ? Row(
+                                        //         mainAxisAlignment:
+                                        //             MainAxisAlignment.spaceBetween,
+                                        //         children: [
+                                        //           TextFormat.small(
+                                        //             text: 'Rs.${data.priceWithDiscount}',
+                                        //             textColor: AppColors.primary,
+                                        //             fontWeight: FontWeight.w800,
+                                        //           ),
+                                        //           TextFormat.small(
+                                        //               text: 'Rs.${data.price}',
+                                        //               decoration:
+                                        //                   TextDecoration.lineThrough),
+                                        //         ],
+                                        //       )
+                                        : TextFormat.small(
+                                            text: 'Rs.${data.price}',
+                                            textColor: AppColors.primary,
+                                            fontWeight: FontWeight.w800,
+                                          ),
+                               
                                 ),
-                              ),
-                            )
-                          ],
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: AppColors.primary, width: 1.5),
+                                      borderRadius: BorderRadius.circular(15)),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 15,
+                                        vertical: 10,
+                                      ),
+                                      child:
+                                      authcontroller.user.value!.purchasedCourses!
+                                        .any((course) => course.id == data.id) ? TextFormat.small(
+                                        text: 'Continue',
+                                         textColor: AppColors.primary,
+                                              fontWeight: FontWeight.w800,
+                                        ):
+                                       data.isFree ?? false
+                                          ? TextFormat.small(
+                                              text: 'Enroll',
+                                              textColor: AppColors.primary,
+                                              fontWeight: FontWeight.w800,
+                                            )
+                                          : TextFormat.small(
+                                              text: 'Buy Now',
+                                              textColor: AppColors.primary,
+                                              fontWeight: FontWeight.w800,
+                                            ),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
                         ),
-                      ),
                     ],
                   ),
                 ),
@@ -171,7 +202,6 @@ class LatestCoursesSection extends StatelessWidget {
             crossAxisSpacing: 5.0,
           );
         }),
-     
       ],
     );
   }

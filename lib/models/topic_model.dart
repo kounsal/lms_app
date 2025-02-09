@@ -15,9 +15,9 @@ class Topic {
 
   factory Topic.fromJson(Map<String, dynamic> json) {
     return Topic(
-      id: json['id'],
-      title: json['title'],
-      totalDuration: json['totalDuration'],
+      id: json['id'] ?? '',
+      title: json['title'] ?? '',
+      totalDuration: json['totalDuration'] ?? '',
       lessons: (json['lessons'] as List).map((e) => Lesson.fromJson(e)).toList(),
     );
   }

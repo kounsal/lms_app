@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:lms_app/controllers/auth_controller.dart';
-import 'package:lms_app/controllers/login_controller.dart';
 import 'package:lms_app/global_widgets/custom_button.dart';
 import 'package:lms_app/helpers/form_helpers.dart';
 import 'package:lms_app/routes/route_names.dart';
 import 'package:lms_app/utils/assets_manager.dart';
+import 'package:lms_app/utils/colors.dart';
 import 'package:lms_app/utils/themes.dart';
-import 'package:lms_app/views/Authentication/LoginScreen/accesscodeLogin.dart';
-import 'package:lms_app/views/Authentication/forgetPass.dart';
-import '../../../utils/colors.dart';
+import 'package:lms_app/views/Authentication/LoginScreen/login_screen.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class Accesscodelogin extends StatelessWidget {
+  const Accesscodelogin({super.key});
 
-  @override
+    @override
   Widget build(BuildContext context) {
 
     final authController = Get.find<AuthController>();
@@ -66,7 +65,7 @@ class LoginScreen extends StatelessWidget {
                                 ),
                                 Obx(() {
                                   return CustomTextField(
-                                    topLabelText: 'Password',
+                                    topLabelText: 'Access Code',
                                     hintText: 'Enter account password',
                                     prefixIcon: Icons.password,
                                     isRequired: true,
@@ -96,12 +95,12 @@ class LoginScreen extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                   Get.to(()=> Accesscodelogin());
+                                   Get.to(()=> LoginScreen());
                                   // Get.toNamed(RouteNames.forgetPassword);
 
                                 },
                                 child: TextFormat.small(
-                                  text: 'Login Using Access Code',
+                                  text: 'Login Using Password',
                                   opacity: 0.5,
                                 ),
                               )
@@ -120,7 +119,7 @@ class LoginScreen extends StatelessWidget {
                               if (authController.validateEmail(
                                       authController.email.value) ==
                                   null) {
-                                authController.login();
+                                authController.loginUsingAccessCode();
                               }
 
                               // Otherwise it will trow an error message
@@ -159,6 +158,5 @@ class LoginScreen extends StatelessWidget {
       ),
     );
   }
-
 
 }

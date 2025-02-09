@@ -1,0 +1,4052 @@
+[
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Pascal"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which law states that the force acting on a body is equal to the product of its mass and acceleration?",
+        "options": [
+            "Newton's First Law",
+            "Newton's Second Law",
+            "Newton's Third Law",
+            "Law of Gravitation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the value of acceleration due to gravity on Earth?",
+        "options": [
+            "9.8 m/s\u00b2",
+            "8.9 m/s\u00b2",
+            "10.2 m/s\u00b2",
+            "7.5 m/s\u00b2"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "What type of mirror is used in vehicle rear-view mirrors?",
+        "options": [
+            "Convex mirror",
+            "Concave mirror",
+            "Plane mirror",
+            "Parabolic mirror"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which physical quantity remains conserved in an elastic collision?",
+        "options": [
+            "Momentum",
+            "Energy",
+            "Both momentum and energy",
+            "Mass"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the atomic number of carbon?",
+        "options": [
+            "6",
+            "12",
+            "14",
+            "16"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which gas is commonly known as laughing gas?",
+        "options": [
+            "Carbon dioxide",
+            "Nitrous oxide",
+            "Sulfur dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which metal is the most reactive?",
+        "options": [
+            "Gold",
+            "Sodium",
+            "Iron",
+            "Copper"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the chemical formula of Sulfuric acid?",
+        "options": [
+            "HCl",
+            "HNO3",
+            "H2SO4",
+            "H2CO3"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the pH value of pure water?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "4"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which organ in the human body produces insulin?",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Lungs"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the basic unit of heredity?",
+        "options": [
+            "Gene",
+            "Chromosome",
+            "DNA",
+            "Protein"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+        "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the function of hemoglobin in the blood?",
+        "options": [
+            "Transport oxygen",
+            "Digest food",
+            "Fight infections",
+            "Clot blood"
+        ],
+        "correctAnswer": 0
+    }
+]

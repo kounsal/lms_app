@@ -3,7 +3,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lms_app/models/course_model.dart';
+import 'package:lms_app/models/lesson_model.dart';
+import 'package:lms_app/models/single_course_model.dart';
+import 'package:lms_app/models/topic_model.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
@@ -14,9 +17,9 @@ class ChewieVideoPlayer extends StatefulWidget {
   final bool autoPlay;
   final bool looping;
   final bool? hideBookmark;
-  final Lessons? lesson;
-  final Topics? topic;
-  final CourseModel? course;
+  final Lesson? lesson;
+  final Topic? topic;
+  final SingleCourseModel? course;
   final Duration? startAt;
     final String? thumbnail;
 
@@ -84,7 +87,7 @@ class _ChewieVideoPlayerState extends State<ChewieVideoPlayer> {
       bookmarks.add({
         'title': widget.lesson!.title,
         'time': bookmarkedTime.toString(),
-        'lesson_url': widget.lesson!.lessonUrl,
+        'lesson_url': widget.lesson!.content,
         'topic': widget.topic!.title,
         'course_name': widget.course!.title,
         'course_thumbnail': widget.course!.thumbnail,

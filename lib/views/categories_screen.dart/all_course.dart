@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/utils/colors.dart';
 import 'package:lms_app/utils/config.dart';
@@ -19,6 +20,7 @@ class AllCourseScreen extends StatefulWidget {
 class _AllCourseScreenState extends State<AllCourseScreen>
     with TickerProviderStateMixin {
   late TabController tabController;
+
   final courseController =
       Get.put(CourseController()); // ✅ Initialize controller
   @override
@@ -60,6 +62,7 @@ class AllCoursesView extends StatefulWidget {
 }
 
 class _AllCoursesViewState extends State<AllCoursesView> {
+  final authcontroller = Get.find<AuthController>();
   final CourseController controller =
       Get.put(CourseController()); // ✅ Initialize controller
 
@@ -69,136 +72,167 @@ class _AllCoursesViewState extends State<AllCoursesView> {
       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
       child: SingleChildScrollView(
         child: Obx(() {
-          return AlignedGridView.count(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            crossAxisCount: 2,
-            itemCount: controller.allCourses.length,
-            itemBuilder: (ctx, index) {
-              final data = controller.allCourses[index];
-              return SizedBox(
-                width: double.infinity,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  elevation: 0.1,
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
+          return Stack(
+            children: [
+              AlignedGridView.count(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                crossAxisCount: 2,
+                itemCount: controller.allCourses.length,
+                itemBuilder: (ctx, index) {
+                  final data = controller.allCourses[index];
+                  return SizedBox(
+                    width: double.infinity,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      elevation: 0.1,
+                      child: Column(
                         children: <Widget>[
-                          ClipRRect(
-                            borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(15),
-                              topRight: Radius.circular(15),
-                            ),
-                            child: CachedNetworkImage(
-                              height: 120,
-                              width: double.infinity,
-                              imageUrl: data.thumbnail,
-                              fit: BoxFit.cover,
-                              placeholder: (context, url) =>
-                                  Center(child: CircularProgressIndicator()),
-                              errorWidget: (context, url, error) => SizedBox(
-                                height: 120,
-                                child: Center(
-                                  child: Icon(
-                                    Icons.broken_image_outlined,
-                                    color: Colors.red,
+                          Stack(
+                            children: <Widget>[
+                              ClipRRect(
+                                borderRadius: const BorderRadius.only(
+                                  topLeft: Radius.circular(15),
+                                  topRight: Radius.circular(15),
+                                ),
+                                child: CachedNetworkImage(
+                                  height: 120,
+                                  width: double.infinity,
+                                  imageUrl: data.thumbnail,
+                                  fit: BoxFit.cover,
+                                  placeholder: (context, url) => Center(
+                                      child: CircularProgressIndicator()),
+                                  errorWidget: (context, url, error) =>
+                                      SizedBox(
+                                    height: 120,
+                                    child: Center(
+                                      child: Image.asset(
+                                        'assets/images/logo.webp',
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                        
-                        ],
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(
-                              height: 42,
-                              child: TextFormat.small(
-                                text: data.title ?? "",
-                                textAlign: TextAlign.start,
-                              ),
-                            ),
-                            const SizedBox(height: 5),
-                            data.isFree ?? false
-                                ? TextFormat.small(
-                                    text: 'Free',
-                                    textColor: AppColors.primary,
-                                    fontWeight: FontWeight.w800,
-                                  )
-                                : data.priceWithDiscount != null
-                                    ? Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          TextFormat.small(
-                                            text:
-                                                'Rs.${data.priceWithDiscount}',
-                                            textColor: AppColors.primary,
-                                            fontWeight: FontWeight.w800,
-                                          ),
-                                          TextFormat.small(
-                                            text: 'Rs.${data.price}',
-                                            decoration:
-                                                TextDecoration.lineThrough,
-                                          ),
-                                        ],
-                                      )
-                                    : TextFormat.small(
-                                        text: 'Rs.${data.price}',
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                SizedBox(
+                                  height: 42,
+                                  child: TextFormat.small(
+                                    text: data.title ?? "",
+                                    textAlign: TextAlign.start,
+                                  ),
+                                ),
+                                const SizedBox(height: 5),
+                                authcontroller.user.value!.purchasedCourses!
+                                        .any((course) => course.id == data.id)
+                                    ? TextFormat.small(
+                                        text: 'Purchased',
                                         textColor: AppColors.primary,
                                         fontWeight: FontWeight.w800,
-                                      ),
-                            const SizedBox(height: 5),
-                            
-                            GestureDetector(
-                              onTap: ()async{
-                                await controller.getCourseDetails(data.id);
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: AppColors.primary, width: 1.5),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 15,
-                                      vertical: 10,
-                                    ),
-                                    
-                                    child: data.isFree ?? false
+                                      )
+                                    : data.isFree
                                         ? TextFormat.small(
-                                            text: 'Enroll',
+                                            text: 'Free',
                                             textColor: AppColors.primary,
                                             fontWeight: FontWeight.w800,
                                           )
-                                        : TextFormat.small(
-                                            text: 'Buy Now',
+                                        :
+                                        // data.priceWithDiscount != null
+                                        //     ? Row(
+                                        //         mainAxisAlignment:
+                                        //             MainAxisAlignment.spaceBetween,
+                                        //         children: [
+                                        //           TextFormat.small(
+                                        //             text:
+                                        //                 'Rs.${data.priceWithDiscount}',
+                                        //             textColor: AppColors.primary,
+                                        //             fontWeight: FontWeight.w800,
+                                        //           ),
+                                        //           TextFormat.small(
+                                        //             text: 'Rs.${data.price}',
+                                        //             decoration:
+                                        //                 TextDecoration.lineThrough,
+                                        //           ),
+                                        //         ],
+                                        //       )
+                                        //     :
+                                        TextFormat.small(
+                                            text: 'Rs.${data.price}',
                                             textColor: AppColors.primary,
                                             fontWeight: FontWeight.w800,
                                           ),
+                                const SizedBox(height: 5),
+                                GestureDetector(
+                                  onTap: () async {
+                                    print(data.id);
+                                    await controller.getCourseDetails(data.id);
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                          color: AppColors.primary, width: 1.5),
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
+                                    child: Center(
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 15,
+                                          vertical: 10,
+                                        ),
+                                        child: 
+                                          authcontroller.user.value!.purchasedCourses!
+                                        .any((course) => course.id == data.id)
+                                    ? TextFormat.small(
+                                        text: 'Learning Page',
+                                        textColor: AppColors.primary,
+                                        fontWeight: FontWeight.w800,
+                                      )
+                                    : 
+                                        data.isFree ?? false
+                                            ? TextFormat.small(
+                                                text: 'Enroll',
+                                                textColor: AppColors.primary,
+                                                fontWeight: FontWeight.w800,
+                                              )
+                                            : TextFormat.small(
+                                                text: 'Buy Now',
+                                                textColor: AppColors.primary,
+                                                fontWeight: FontWeight.w800,
+                                              ),
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-              );
-            },
-            mainAxisSpacing: 5.0,
-            crossAxisSpacing: 5.0,
+                    ),
+                  );
+                },
+                mainAxisSpacing: 5.0,
+                crossAxisSpacing: 5.0,
+              ),
+              controller.loadingCourseContent.value
+                  ? Container(
+                      height: MediaQuery.of(context).size.height,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.black.withOpacity(.5),
+                      child: Center(
+                        child: CircularProgressIndicator(),
+                      ),
+                    )
+                  : SizedBox.shrink()
+            ],
           );
         }),
       ),
@@ -227,10 +261,11 @@ class _AllPlansViewState extends State<AllPlansView> {
           itemCount: courseController.plans.length,
           itemBuilder: (context, index) {
             final data = courseController.plans[index];
-            return 
-            GestureDetector(
-              onTap: (){
-                Get.to(PlanContentScreen(plan: data,));
+            return GestureDetector(
+              onTap: () {
+                Get.to(PlanContentScreen(
+                  plan: data,
+                ));
               },
               child: Container(
                 margin: const EdgeInsets.only(bottom: 10),
@@ -266,10 +301,10 @@ class _AllPlansViewState extends State<AllPlansView> {
                               data.thumbnail ?? "",
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) {
-                                return Icon(
-                                  Icons.broken_image_outlined,
-                                  color: Colors.red,
-                                );
+                                return Image.asset(
+                                        'assets/images/logo.webp',
+                                        fit: BoxFit.contain,
+                                      );
                               },
                             ),
                           ),
@@ -297,18 +332,15 @@ class _AllPlansViewState extends State<AllPlansView> {
                                     ),
                                   ),
                                   TextFormat.extraSmall(
-                                    text:
-                                        'Duration ${data.duration}',
+                                    text: 'Duration ${data.duration}',
                                     opacity: .5,
                                   ),
-                      
                                 ],
-              
                               ),
-                                        TextFormat.small(
-                                              text: 'Rs.${data.price}',
-                                              textColor: AppColors.primary,
-                                              fontWeight: FontWeight.w700),
+                              TextFormat.small(
+                                  text: 'Rs.${data.price}',
+                                  textColor: AppColors.primary,
+                                  fontWeight: FontWeight.w700),
                             ],
                           ),
                         ))

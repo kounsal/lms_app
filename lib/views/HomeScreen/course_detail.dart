@@ -15,15 +15,15 @@ class _CourseDetailScreeenState extends State<CourseDetailScreeen> {
     SingleCourseModel course = Get.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text(course.title),
+        title: Text(course.title!),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             // Image.network(course.thumbnail),
-            Text(course.title),
-            Text(course.description),
-            Text(course.category),
+            Text(course.title!),
+            Text(course.description!),
+            Text(course.category!),
           
           ],
         ),

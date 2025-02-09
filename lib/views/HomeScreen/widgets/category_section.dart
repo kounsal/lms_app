@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lms_app/controllers/home_controller.dart';
-import 'package:lms_app/routes/route_names.dart';
 
 class CategorySection extends StatelessWidget {
   const CategorySection({super.key});

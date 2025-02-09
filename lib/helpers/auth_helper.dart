@@ -31,4 +31,8 @@ class AuthHelper {
     final pref = await SharedPreferences.getInstance();
     pref.remove('token');
   }
+static Future saveUser(UserModel user) async {
+    final pref = await SharedPreferences.getInstance();
+   pref.setString('user', jsonEncode(user.toJson()));
+}
 }

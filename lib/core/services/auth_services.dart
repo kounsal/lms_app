@@ -14,19 +14,26 @@ class AuthServices {
     required UserModel user,
   }) async {
     final pref = await SharedPreferences.getInstance();
-    final request = await http
-        .post(AppUrls.register, headers: RequestHelpers.header(), body: {
-      'full_name': user.fullname,
-      'email': user.email,
-      // 'username': user.username,
-      'password': user.password,
-    });
+    final request = await http.post(AppUrls.register,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: jsonEncode({
+          'username': user.fullname,
+          'email': user.email,
+          // 'username': user.username,
+          'password': user.password,
+        }));
 
-    if (request.statusCode == 200) {
-      pref.setString('token', jsonDecode(request.body)['response']['token']);
+    if (request.statusCode == 201) {
+      pref.setString('token', jsonDecode(request.body)['token']);
+      pref.setString('user', jsonEncode(jsonDecode(request.body)['user']));
       pref.setString('name', user.fullname!);
       return true;
     } else {
+      final decoded = jsonDecode(request.body);
+      print(decoded);
       return false;
     }
   }
@@ -40,12 +47,13 @@ class AuthServices {
     print(jsonEncode({
       'email': user.email,
       'password': user.password,
-    }));  
+    }));
     print(AppUrls.login);
-    final request = await http.post(AppUrls.login,   headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-  },
+    final request = await http.post(AppUrls.login,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
         body: jsonEncode({
           'email': user.email,
           'password': user.password,
@@ -74,5 +82,44 @@ class AuthServices {
     }
   }
 
+  static Future<bool> accessLogin({
+    required UserModel user,
+  }) async {
+    final pref = await SharedPreferences.getInstance();
+   
+    print(AppUrls.loginAcessCode);
+    final request = await http.post(AppUrls.loginAcessCode,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: jsonEncode({
+    "email" : user.email,
+    "code" : user.password
+},
+));
+    print(request.headers);
+    print(request.body);
+    if (request.statusCode == 200) {
+      print(jsonDecode(request.body)['token']);
+      pref.setString('token', jsonDecode(request.body)['token']);
+      pref.setString('user', jsonEncode(jsonDecode(request.body)['user']));
+      return true;
+    } else {
+      final decoded = jsonDecode(request.body) ;
+      print(decoded);
+      Get.dialog(
+        CustomAlert(
+          title: 'Error!',
+          description: decoded['message'],
+          buttonText: 'Try Again',
+          image: AnimationManager.error,
+          isAnimated: true,
+        ),
+        barrierDismissible: false,
+      );
+      return false;
+    }
+  }
 
 }

@@ -14,6 +14,7 @@ static const String freeVideos = '/free-videos';
 static const String testSeries = '/test-series';
 static const String quiz = '/quiz';
 static const String books = '/books';
+// static const String paymentViewPage = '/payment-view-page';
 
 
 

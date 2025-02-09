@@ -8,11 +8,11 @@ import '../../../utils/colors.dart';
 import '../../../utils/themes.dart';
 
 class ModulesSection extends StatelessWidget {
-  // final SingleCourseModel course;
-  final CourseModel course = getFeaturedCourse[0];
-
+  final SingleCourseModel courseNew;
+  // final CourseModel course = getFeaturedCourse[0];
+  
   ModulesSection({
-    super.key,
+    super.key, required this.courseNew,
   });
 
   @override
@@ -25,9 +25,9 @@ class ModulesSection extends StatelessWidget {
               shrinkWrap: true,
               primary: false,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: course.topics!.length,
+              itemCount: courseNew.topics!.length,
               itemBuilder: (ctx, index) {
-                final topic = course.topics![index];
+                final topic = courseNew.topics![index];
                 return Card(
                   color: Colors.white,
                   elevation: 0.3,
@@ -86,7 +86,7 @@ class ModulesSection extends StatelessWidget {
                                   child: Align(
                                     alignment: Alignment.center,
                                     child: TextFormat.extraSmall(
-                                      text: '${topic.lesson!.length} Lessons',
+                                      text: '${topic.lessons.length} Lessons',
                                       textColor: Colors.deepPurple,
                                     ),
                                   ),
@@ -102,11 +102,11 @@ class ModulesSection extends StatelessWidget {
                         ListView.builder(
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
-                          itemCount: topic.lesson!.length,
+                          itemCount: topic.lessons.length,
                           itemBuilder: (ctx, indexLess) {
-                            final lesson = topic.lesson![indexLess];
+                            final lesson = topic.lessons![indexLess];
                             return ListTile(
-                              onTap: course.isPurchased!
+                              onTap: courseNew.isPurchased!
                                   ? () {
                                       controller.currentLessonIndex.value =
                                           indexLess;
@@ -115,7 +115,7 @@ class ModulesSection extends StatelessWidget {
                                         arguments: {
                                           'index': indexLess,
                                           'topic_index': index,
-                                          'course': course,
+                                          'course': courseNew,
                                         },
                                       );
                                     }
@@ -130,7 +130,7 @@ class ModulesSection extends StatelessWidget {
                                 ),
                               ),
                               title: Text(lesson.title),
-                              trailing:course.isPurchased!
+                              trailing:courseNew.isPurchased!
                                   ? 
                                TextFormat.extraSmall(
                                 text: lesson.duration.toString(),

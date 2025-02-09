@@ -2,8 +2,10 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/controllers/home_controller.dart';
+import 'package:lms_app/routes/route_names.dart';
 import 'package:lms_app/utils/colors.dart';
 import 'package:lms_app/utils/config.dart';
 import 'package:lms_app/utils/themes.dart';
@@ -13,7 +15,8 @@ class FeaturedCourseSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(HomeController());
+    final authcontroller = Get.find<AuthController>();
+
     final courseController = Get.put(CourseController());
     final size = MediaQuery.sizeOf(context);
     return Column(
@@ -30,10 +33,15 @@ class FeaturedCourseSection extends StatelessWidget {
                 color: Colors.black.withOpacity(.6),
               ),
             ),
-            Text(
-              'View All',
-              style: GoogleFonts.poppins(
-                color: AppColors.primary,
+            GestureDetector(
+              onTap: (){
+                Get.toNamed(RouteNames.allCourses);
+              },
+              child: Text(
+                'View All',
+                style: GoogleFonts.poppins(
+                  color: AppColors.primary,
+                ),
               ),
             ),
           ],
@@ -83,10 +91,10 @@ class FeaturedCourseSection extends StatelessWidget {
                                 data.thumbnail ?? "",
                                 fit: BoxFit.cover,
                                 errorBuilder: (context, error, stackTrace) {
-                                  return Icon(
-                                    Icons.broken_image_outlined,
-                                    color: Colors.red,
-                                  );
+                                  return Image.asset(
+                                        'assets/images/logo.webp',
+                                        fit: BoxFit.contain,
+                                      );
                                 },
                               ),
                             ),
@@ -123,91 +131,108 @@ class FeaturedCourseSection extends StatelessWidget {
                                             text: 'Free',
                                             textColor: AppColors.primary,
                                             fontWeight: FontWeight.w700)
-                                        : data.priceWithDiscount != null
-                                            ? Row(
-                                                children: [
-                                                  TextFormat.small(
-                                                      text:
-                                                          'Rs.${data.priceWithDiscount}',
-                                                      textColor:
-                                                          AppColors.primary,
-                                                      fontWeight:
-                                                          FontWeight.w700),
-                                                  const SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  TextFormat.small(
-                                                      text: 'Rs.${data.price}',
-                                                      decoration: TextDecoration
-                                                          .lineThrough),
-                                                ],
-                                              )
-                                            : TextFormat.small(
-                                                text: 'Rs.${data.price}',
-                                                textColor: AppColors.primary,
-                                                fontWeight: FontWeight.w700),
+                                        // : data.priceWithDiscount != null
+                                        //     ? Row(
+                                        //         children: [
+                                        //           TextFormat.small(
+                                        //               text:
+                                        //                   'Rs.${data.priceWithDiscount}',
+                                        //               textColor:
+                                        //                   AppColors.primary,
+                                        //               fontWeight:
+                                        //                   FontWeight.w700),
+                                        //           const SizedBox(
+                                        //             width: 10,
+                                        //           ),
+                                        //           TextFormat.small(
+                                        //               text: 'Rs.${data.price}',
+                                        //               decoration: TextDecoration
+                                        //                   .lineThrough),
+                                        //         ],
+                                        //       )
+                                        : TextFormat.small(
+                                            text: 'Rs.${data.price}',
+                                            textColor: AppColors.primary,
+                                            fontWeight: FontWeight.w700),
                                   ],
                                 ),
-                                GestureDetector(
-                                  onTap: () async {
-                                    await courseController
-                                        .getCourseDetails(data.id);
-                                  },
-                                  child: Container(
-                                    width: constraints.maxWidth * .5,
-                                    decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: AppColors.primary,
+                                Obx(() {
+                                  return GestureDetector(
+                                    onTap: () async {
+                                      await courseController
+                                          .getCourseDetails(data.id);
+                                    },
+                                    child: Container(
+                                      width: constraints.maxWidth * .5,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: AppColors.primary,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(10)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 15,
+                                          vertical: 5,
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 15,
-                                        vertical: 5,
-                                      ),
-                                      child: Center(
-                                        child: data.isFree ?? false
-                                            ? Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceEvenly,
-                                                children: [
-                                                  Icon(
-                                                    Icons.shopping_cart,
-                                                    size: 20,
-                                                    color: AppColors.primary,
-                                                  ),
-                                                  Text(
-                                                    'Enroll Now',
-                                                    style: GoogleFonts.poppins(
-                                                      color: AppColors.primary,
+                                        child: Center(
+                                          child: authcontroller
+                                                  .user.value!.purchasedCourses!
+                                                  .any((course) =>
+                                                      course.id == data.id)
+                                              ? TextFormat.small(
+                                                  text: 'Purchased',
+                                                  textColor: AppColors.primary,
+                                                  fontWeight: FontWeight.w800,
+                                                )
+                                              : data.isFree ?? false
+                                                  ? Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceEvenly,
+                                                      children: [
+                                                        Icon(
+                                                          Icons.shopping_cart,
+                                                          size: 20,
+                                                          color:
+                                                              AppColors.primary,
+                                                        ),
+                                                        Text(
+                                                          'Enroll Now',
+                                                          style: GoogleFonts
+                                                              .poppins(
+                                                            color: AppColors
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    )
+                                                  : Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceEvenly,
+                                                      children: [
+                                                        Icon(
+                                                          Icons.shopping_cart,
+                                                          size: 20,
+                                                          color:
+                                                              AppColors.primary,
+                                                        ),
+                                                        Text(
+                                                          'Buy Now',
+                                                          style: GoogleFonts
+                                                              .poppins(
+                                                            color: AppColors
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ],
                                                     ),
-                                                  ),
-                                                ],
-                                              )
-                                            : Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceEvenly,
-                                                children: [
-                                                  Icon(
-                                                    Icons.shopping_cart,
-                                                    size: 20,
-                                                    color: AppColors.primary,
-                                                  ),
-                                                  Text(
-                                                    'Buy Now',
-                                                    style: GoogleFonts.poppins(
-                                                      color: AppColors.primary,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                )
+                                  );
+                                })
                               ],
                             ),
                           ))

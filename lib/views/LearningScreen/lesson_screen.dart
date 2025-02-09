@@ -5,7 +5,9 @@ import 'package:lms_app/controllers/course_controller.dart';
 import 'package:lms_app/global_widgets/custom_button.dart';
 import 'package:lms_app/global_widgets/in_app_bar.dart';
 import 'package:lms_app/global_widgets/video_player.dart';
-import 'package:lms_app/models/course_model.dart';
+import 'package:lms_app/models/lesson_model.dart';
+
+import 'package:lms_app/models/single_course_model.dart';
 import 'package:lms_app/views/LearningScreen/widgets/lesson_info_widget.dart';
 import 'package:video_player/video_player.dart';
 
@@ -16,16 +18,16 @@ class LessonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
     final arg = Get.arguments;
-    CourseModel course = arg['course'] as CourseModel;
+     SingleCourseModel course = arg['course'] as SingleCourseModel;
     final controller = Get.put(CourseController());
-    final List<Lessons>? lessons =
-        course.topics![controller.expandedTileIndex.value].lesson;
+    final List<Lesson>? lessons =
+        course.topics?[controller.expandedTileIndex.value].lessons;
 
     return Scaffold(
       appBar:
           inAppBar(course.topics![controller.expandedTileIndex.value].title),
       body: GetBuilder<CourseController>(builder: (controller) {
-        final lesson = lessons![controller.currentLessonIndex.value];
+        final lesson = lessons?[controller.currentLessonIndex.value];
         return Padding(
           padding: const EdgeInsets.all(15),
           child: Column(
@@ -52,7 +54,7 @@ class LessonScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            lesson.title,
+                            lesson?.title ?? '',
                             style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.w500, fontSize: 16),
                           ),
@@ -67,12 +69,12 @@ class LessonScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: ChewieVideoPlayer(
-                              key: ValueKey(lesson.lessonUrl),
+                              key: ValueKey(lesson?.content ?? ''),
                               videoPlayerController:
-                                  VideoPlayerController.asset(
-                                lesson.lessonUrl,
+                                  VideoPlayerController.networkUrl(
+                                Uri.parse(lesson?.content ?? ''),
                               ),
-                              title: lesson.title,
+                              title: lesson?.title ?? " ",
                               autoPlay: true,
                               looping: true,
                               lesson: lesson,
@@ -177,7 +179,7 @@ class LessonScreen extends StatelessWidget {
                     buttonTitle:
                         controller.allLessonsCompleted(lessons, course.topics)
                             ? 'Claim Certificate'
-                            : lesson.isComplete
+                            : lesson?.isCompleted ?? false
                                 ? 'Completed'
                                 : 'Complete Lesson',
                     onTap: () =>

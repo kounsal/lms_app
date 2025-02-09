@@ -1,13 +1,15 @@
 import 'package:get/get.dart';
+import 'package:lms_app/controllers/auth_controller.dart';
 import 'package:lms_app/global_widgets/custom_alert.dart';
 import 'package:lms_app/helpers/api_helper.dart';
 import 'package:lms_app/models/coursee_model_new.dart';
+import 'package:lms_app/models/lesson_model.dart';
 import 'package:lms_app/models/plan_model.dart';
 import 'package:lms_app/models/single_course_model.dart';
+import 'package:lms_app/models/topic_model.dart';
 import 'package:lms_app/routes/route_names.dart';
 import 'package:lms_app/utils/app_urls.dart';
 import 'package:lms_app/utils/assets_manager.dart';
-import '../models/course_model.dart';
 
 class CourseController extends GetxController {
   RxList<Course> featuredCourses = <Course>[].obs;
@@ -112,7 +114,9 @@ Future<void> getCourseDetails(String courseId , ) async {
   }
 
 Future<void> getMyCourses() async{
+  // final AuthController authController = Get.find<AuthController>();  
     try{
+      // authController.user.value!.purchasedCourses
       var response = await ApiHelper.get(AppUrls.mycourses , auth: true);
       if(response != null && response['courses'] != null){
         print("-----------------");
@@ -137,7 +141,7 @@ Future<void> getMyCourses() async{
     expandedTileIndex.refresh();
   }
 
-  void nextLesson(List<Lessons>? lessons) {
+  void nextLesson(List<Lesson>? lessons) {
     if (currentLessonIndex.value < lessons!.length - 1) {
       currentLessonIndex.value++;
       update();
@@ -151,8 +155,8 @@ Future<void> getMyCourses() async{
     }
   }
 
-  void completeLesson(List<Lessons>? lessons, CourseModel course) {
-    lessons![currentLessonIndex.value].isComplete = true;
+  void completeLesson(List<Lesson>? lessons, SingleCourseModel course) {
+    lessons![currentLessonIndex.value].isCompleted = true;
     update();
 
     // Check if all lessons are completed
@@ -172,15 +176,15 @@ Future<void> getMyCourses() async{
     }
   }
 
-  bool allLessonsCompleted(List<Lessons>? lessons, List<Topics>? topics) {
+  bool allLessonsCompleted(List<Lesson>? lessons, List<Topic>? topics) {
     return topics!.every(
-      (topic) => topic.lesson!.every(
-        (lesson) => lesson.isComplete,
+      (topic) => topic.lessons.every(
+        (lesson) => lesson.isCompleted,
       ),
     );
   }
 
-  double calculateOverallCourseProgress(CourseModel course) {
+  double calculateOverallCourseProgress(SingleCourseModel course) {
     if (course.topics == null || course.topics!.isEmpty) {
       return 0.0;
     }
@@ -189,10 +193,10 @@ Future<void> getMyCourses() async{
     int completedLessons = 0;
 
     for (var topic in course.topics!) {
-      if (topic.lesson != null) {
-        totalLessons += topic.lesson!.length;
+      if (topic.lessons.isNotEmpty) {
+        totalLessons += topic.lessons.length;
         completedLessons +=
-            topic.lesson!.where((lesson) => lesson.isComplete).length;
+            topic.lessons!.where((lesson) => lesson.isCompleted).length;
       }
     }
 

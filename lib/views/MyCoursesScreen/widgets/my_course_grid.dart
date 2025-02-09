@@ -13,15 +13,19 @@ class MyCourseGrid extends StatelessWidget {
   final Course course;
 
   const MyCourseGrid({
-    Key? key,
+    super.key,
     required this.course,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    CourseModel cou = getFeaturedCourse[0];
+    final courseController = Get.find<CourseController>();
+    // CourseModel cou = getFeaturedCourse[0];
     return InkWell(
-      onTap: () => Get.toNamed(RouteNames.courseLearn, arguments: cou),
+      onTap: () async {
+        print(course.id);
+        await courseController.getCourseDetails(course.id);
+      },
       child: SizedBox(
         width: double.infinity,
         child: Card(

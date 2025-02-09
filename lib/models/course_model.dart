@@ -58,7 +58,7 @@ class Lessons {
 
 List<CourseModel> getFeaturedCourse = [
   CourseModel(
-    isPurchased : false,
+    isPurchased : true,
     promoVide: 'assets/videos/flutter.mp4',
     title: 'Mastering Entrepreneurship',
     thumbnail:

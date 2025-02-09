@@ -14,6 +14,10 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.find<AuthController>();
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+    TextEditingController confirmPasswordController = TextEditingController();
+    TextEditingController usernameController = TextEditingController();
     // final controller = Get.put(RegisterController());
     return Scaffold(
       body: SafeArea(
@@ -62,7 +66,7 @@ class RegisterScreen extends StatelessWidget {
                                   prefixIcon: Icons.alternate_email,
                                   isRequired: true,
                                   onChanged: (p0) =>
-                                      controller.user.value?.fullname = p0,
+                                      usernameController.text = p0,
                                 ),
                                 const SizedBox(
                                   height: 15,
@@ -72,8 +76,8 @@ class RegisterScreen extends StatelessWidget {
                                   hintText: 'Enter your email',
                                   prefixIcon: Icons.email_rounded,
                                   isRequired: true,
-                                  onChanged: (username) {
-                                    controller.user.value?.email = username;
+                                  onChanged: (email) {
+                                    emailController.text = email;
                                   },
                                 ),
                                 const SizedBox(
@@ -83,10 +87,11 @@ class RegisterScreen extends StatelessWidget {
                                   topLabelText: 'Password',
                                   hintText: 'Enter account password',
                                   prefixIcon: Icons.password,
+                                 
                                   isRequired: true,
                                   isSecured: true,
                                   onChanged: (p0) =>
-                                      controller.user.value?.password = p0,
+                                      passwordController.text = p0,
                                 ),
                                 const SizedBox(
                                   height: 15,
@@ -95,14 +100,20 @@ class RegisterScreen extends StatelessWidget {
                                   topLabelText: 'Confirm Password',
                                   hintText: 'Re-type your password',
                                   prefixIcon: Icons.password,
+                                   suffixIcon: IconButton(
+                                      onPressed: () {
+                                        controller.obscure.value =
+                                            !controller.obscure.value;
+                                      },
+                                      icon: Icon(Icons.visibility),
+                                    ),
                                   isRequired: true,
                                   isSecured: true,
-                                  errorText: controller
-                                          .confirmPassword.value.isNotEmpty
-                                      ? 'Password mismatched'
-                                      : null,
+                                  errorText: (controller.password.value != controller.confirmPassword.value)? 
+                                   'Passwords do not match' : null,
                                   onChanged: (p0) {
-                                    controller.validateConfirmPassword(p0);
+                                    confirmPasswordController.text = p0;
+                                    
                                   },
                                 ),
                               ],
@@ -117,17 +128,27 @@ class RegisterScreen extends StatelessWidget {
                             isLoading: controller.isLoading.value,
                             buttonTitle: 'Sign Up',
                             onTap: () {
-                              if (controller.validateConfirmPassword(
-                                          controller.password.value) ==
-                                      null &&
-                                  controller.validateEmail(
-                                          controller.email.value) ==
-                                      null &&
-                                  controller.validatePassword(
-                                          controller.password.value) ==
-                                      null) {
-                                controller.register();
-                              }
+                              controller.register(
+                                  usernameController.text,
+                                  emailController.text,
+                                  passwordController.text);
+                              // if (
+                                
+                              //   controller.validateConfirmPassword(
+                              //             controller.password.value) ==
+                              //         null &&
+                              //     controller.validateEmail(
+                              //             controller.email.value) ==
+                              //         null &&
+                              //     controller.validatePassword(
+                              //             controller.password.value) ==
+                              //         null) {
+                              //   controller.register(
+                              //       usernameController.text,
+                              //       emailController.text,
+                              //       passwordController.text
+                              //       );
+                              // }
                               // Check the form is valid or not
                               // if (controller.globalKey.currentState!
                               //     .validate()) {

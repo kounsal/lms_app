@@ -97,10 +97,10 @@ class _NewVideoPlayerState extends State<NewVideoPlayer> {
         errorWidget: (context, url, error) => SizedBox(
           height: 120,
           child: Center(
-            child: Icon(
-              Icons.broken_image_outlined,
-              color: Colors.red,
-            ),
+            child: Image.asset(
+                                        'assets/images/logo.webp',
+                                        fit: BoxFit.contain,
+                                      ),
           ),
         ),
       ),

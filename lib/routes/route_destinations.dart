@@ -13,6 +13,7 @@ import 'package:lms_app/views/categories_screen.dart/all_course.dart';
 import 'package:lms_app/views/categories_screen.dart/free_videos.dart';
 import 'package:lms_app/views/categories_screen.dart/quiz_screen.dart';
 import 'package:lms_app/views/categories_screen.dart/test_series.dart';
+import 'package:lms_app/views/payment/payment_view.dart';
 
 import '../views/LearningScreen/learning_screen.dart';
 
@@ -32,6 +33,7 @@ class Routes {
     GetPage(name: RouteNames.testSeries, page: ()=> TestSeriesScreeen()),
     GetPage(name: RouteNames.books, page: ()=> AllBookScreen()),
     GetPage(name: RouteNames.courseDetails, page: ()=> CourseDetailScreeen()),
+    // GetPage(name: RouteNames.paymentViewPage, page: ()=> PaymentViewPage()),
     
     
   ];
